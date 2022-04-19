@@ -1,0 +1,8 @@
+.word {
+	margin-top: 30rpx;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+	text-align: justify;
+	text-indent: 2em;
+	font-size: 32rpx;
+}

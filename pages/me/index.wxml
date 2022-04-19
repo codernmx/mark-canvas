@@ -1,0 +1,64 @@
+<!-- <block wx:if="{{canIUseGetUserProfile}}">
+	<button bindtap="getUserProfile"> 没有授权 </button>
+</block> -->
+<block>
+	<view class="head" bindtap="login" wx:if="{{isLogin}}">
+		<view class="headUrl">
+			<image class="img" src="{{userInfo.avatarUrl}}"></image>
+		</view>
+		<view class="headRight">
+			<view class="nickName">
+				{{userInfo.nickName}}
+				<van-tag class="customer" round type="success">普通用户</van-tag>
+			</view>
+			<text class="welcome">欢迎使用便捷出行!</text>
+		</view>
+	</view>
+
+	<view class="head" bindtap="login" wx:else>
+		<view class="unLogin" style="margin: 20rpx 30rpx 20rpx 50rpx;">
+			<image class="img" src="../../assets/imgs/my/head.png"></image>
+		</view>
+		<view class="headRight">
+			<view class="nickName">点击登录</view>
+			<text class="welcome">做一个有梦想的咸鱼吧!</text>
+		</view>
+	</view>
+
+
+</block>
+<!-- <view class="list">
+	<view class="flex" bindtap="openHelper">
+		<van-image width="55rpx" height="55rpx" fit="contain" src="../../assets/imgs/my/zs.png" />
+		<text>打开助手</text>
+	</view>
+	<view class="flex" bindtap="openBusEwm">
+		<van-image width="55rpx" height="55rpx" fit="contain" src="../../assets/imgs/my/qian.png" />
+		<text>签到任务</text>
+	</view>
+	<view class="flex" bindtap="openWeather">
+		<van-image width="55rpx" height="55rpx" fit="contain" src="../../assets/imgs/my/tq.png" />
+		<text>查看天气</text>
+	</view>
+	<view class="flex" bindtap="showPopup">
+		<van-image width="55rpx" height="55rpx" fit="contain" src="../../assets/imgs/my/user.png" />
+		<text>我的主人</text>
+	</view>
+</view> -->
+
+<view class="contant">
+	<van-cell icon="service-o" title="联系我们" is-link />
+	<button class="contact" open-type='contact'>联系我们</button>
+	<van-cell icon="question-o" title="关于我们" is-link url="/pages/about/index" />
+
+	<van-cell icon="setting-o" title="系统设置" is-link url='/pages/seeting/index' />
+</view>
+<view class="ad">
+	<!-- <ad unit-id="adunit-e79c0f2801bbb33e"></ad> -->
+</view>
+<view class="copy">Copyright © 2020 By Erha</view>
+
+<van-toast id="van-toast" />
+<van-popup show="{{ isShowWeChat }}" bind:close="onClosePopup">
+	<van-image width="200" height="220" src="/assets/imgs/my/weChat.png" />
+</van-popup>

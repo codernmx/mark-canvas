@@ -1,0 +1,188 @@
+page {
+	background: #f5f3f3;
+	position: relative;
+	overflow: hidden;
+}
+
+.head {
+	display: flex;
+	min-height: 180rpx;
+	background: #FFFFFF;
+	margin: 30rpx 30rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+
+.headUrl {
+	height: 160rpx;
+	width: 160rpx;
+	align-items: center;
+	margin: 20rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+.unLogin {
+	opacity: 0.6;
+	height: 140rpx;
+	width: 140rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.img{
+	width: 100%;
+	height: 100%;
+}
+.headRight {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nickName {
+	font-weight: 600;
+}
+
+.customer {
+	margin-left: 30rpx;
+}
+
+.welcome {
+	color: gray;
+	font-size: 26rpx;
+	margin-top: 15rpx;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 30rpx 30rpx 30rpx;
+	background: #FFFFFF;
+	height: 180rpx;
+	border-radius: 20rpx;
+	padding: 0 60rpx;
+}
+
+.contant {
+	margin: 0 30rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+
+.copy {
+	font-size: 28rpx;
+	text-align: center;
+	margin-top: 30rpx;
+	color: gray;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: gray;
+	font-size: 26rpx;
+}
+
+.ad {
+	margin: 30rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+
+
+
+
+.boxLine {
+	height: 42px;
+	overflow: hidden;
+}
+
+.line-bot {
+	height: 1rpx;
+	margin-left: 15px;
+	margin-right: 15px;
+	background: rgb(243, 239, 239);
+}
+
+.button {
+	padding: 0;
+	text-align: left;
+	border-top: none;
+	margin-top: -1px;
+}
+
+
+.feedback {
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	opacity: 0;
+}
+
+.contact {
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	margin-top: -110rpx;
+	opacity: 0;
+}
+
+/* .headBox {
+  position: relative;
+  width: 100%;
+  height: 600rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.boxBg {
+  width: 100%;
+  height: 700rpx;
+  position: absolute;
+  filter: blur(10rpx);
+}
+
+.head {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 150rpx;
+  overflow: hidden;
+  /* border: 1px solid black; */
+/* position: absolute;
+  top: 200rpx;
+} */
+
+/* .userNickName {
+  text-align: center;
+  position: absolute;
+  bottom: 180rpx;
+  color: #FFFFFF;
+}
+
+.copy {
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  color: gray;
+}
+
+.button {
+  padding: 0;
+  text-align: left;
+  border-top: none;
+  margin-top: -1px;
+}
+.boxLine{
+  height: 42px;
+  overflow: hidden;
+}
+.line-bot{
+  height: 1rpx;
+  margin-left: 15px;
+  margin-right: 15px;
+  background: rgb(243, 239, 239);
+} 
+*/

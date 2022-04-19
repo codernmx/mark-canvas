@@ -1,0 +1,17 @@
+page {
+	background: #f5f3f3;
+	position: relative;
+}
+
+.feedback {
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	opacity: 0;
+}
+
+.card {
+	margin: 20rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}

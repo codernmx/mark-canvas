@@ -1,0 +1,10 @@
+<view class="card">
+	<van-cell title="清除缓存" is-link bindtap="openAction" />
+	<van-action-sheet show="{{ show }}" actions="{{ actions }}" cancel-text="取消" bind:select="select" bind:cancel="close"
+		bind:close="close" />
+	<button class="feedback" open-type='feedback'>意见反馈</button>
+	<van-cell title="意见反馈" is-link />
+	<van-cell title="当前版本" value="最新" is-link />
+
+	<van-toast id="van-toast" />
+</view>

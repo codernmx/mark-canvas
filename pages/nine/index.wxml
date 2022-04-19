@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="upload" bindtap="chooseImg" wx:if="{{!src}}">
+        <view>上传图片</view>
+        <!-- <image style="height: 100%;" wx:if="{{src}}" mode="widthFix" src="{{src}}" bindtap="chooseImg"></image> -->
+
+    </view>
+    <view class="imgBox" wx:if="{{src}}">
+        <van-image width="100%" height="350rpx" fit="contain" bindtap="chooseImg" src="{{src}}" />
+    </view>
+
+
+    <view class="cutBox" wx:if="{{src}}">
+        <canvas class="cutItem" wx:for="{{9}}" style="width: {{(screenWidth-70)/3}}px; height:{{(screenWidth-70)/3}}px;" canvas-id="{{'c' + index}}"></canvas>
+        <!-- <canvas class="cutItem" wx:for="{{9}}" style="width: {{375}}px; height: {{100}}px;" canvas-id="{{'c' + index}}"></canvas> -->
+    </view>
+
+    <!-- <view class="top">压缩率：{{currentValue}}</view>
+    <view class="top">压缩后大小：{{size}}</view>
+
+
+
+
+    <view class="top">
+        <van-slider value="{{currentValue}}" bind:change="onChange" />
+    </view> -->
+
+
+
+
+</view>
+<view class="btn" wx:if="{{src}}">
+    <van-button plain type="primary" round bindtap="save">保存所有图片</van-button>
+</view>
+
+
+<!-- <image wx:if="{{src1}}" mode="widthFix" src="{{src1}}"></image> -->

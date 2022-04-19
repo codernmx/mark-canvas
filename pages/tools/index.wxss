@@ -1,0 +1,11 @@
+.page {
+    padding: 30rpx;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 25%;
+    text-align: center;
+}

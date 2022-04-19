@@ -1,0 +1,22 @@
+<!-- <view class="page">
+    <view bindtap="toPage" class="box">
+        <view wx:for="{{list}}" class="item">
+            <van-icon style="font-size: 80rpx;color: red;" data-url="{{item.url}}" name="{{item.icon}}" />
+            <view data-url="{{item.url}}" style="font-size: 24rpx;">{{item.title}}</view>
+        </view>
+    </view>
+</view> -->
+<view class="top">
+    <van-cell title="图片压缩" icon="location-o" is-link link-type="navigateTo" url="/pages/compressImage/index" />
+</view>
+
+<view class="top">
+    <van-cell title="视频剪辑" icon="location-o" is-link link-type="navigateTo" url="/pages/cut/index" />
+</view>
+<view class="top">
+    <van-cell title="视频模板" icon="location-o" is-link link-type="navigateTo" url="plugin://myPlugin/main?mode=template" />
+</view>
+
+<view class="top">
+    <van-cell title="九宫格切图" icon="location-o" is-link link-type="navigateTo" url="/pages/nine/index" />
+</view>

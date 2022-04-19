@@ -1,0 +1,32 @@
+<view class="page-body">
+    <view class="page-body-wrapper">
+        <view class="cameraBox">
+            <camera wx:if="{{!src}}" device-position="{{position}}" flash="off" binderror="error" style="width: {{screenWidth}}px; height: 500px;"></camera>
+            <view style="width: 100%">
+                <canvas wx:if="{{src}}" style="width: {{414}}px; height: {{500}}px;" canvas-id="firstCanvas"></canvas>
+            </view>
+            <view class="word" wx:if="{{!src}}">
+                <view style="font-size: 29px;font-weight: 500;">{{nowTime}}</view>
+                <view style="font-size: 14px;" bindtap="showAddressList">{{addressInfo.address}}</view>
+            </view>
+        </view>
+        <view class="photo" wx:if="{{isPhoto}}">
+            <van-icon name="location-o" style="font-size: 100rpx;" bindtap="showAddressList" />
+            <view class="btn" bindtap="takePhoto"></view>
+            <van-icon name="replay" style="font-size: 100rpx;" bindtap="changePosition" />
+        </view>
+        <view class="back" wx:if="{{!isPhoto}}">
+            <van-icon name="close" bindtap="back" style="font-size: 100rpx;" />
+            <van-icon name="down" bindtap="save" style="font-size: 100rpx;" />
+            <van-icon name="share" bindtap="share" style="font-size: 100rpx;" />
+        </view>
+        <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
+    </view>
+</view>
+<van-popup show="{{ show }}" bind:close="onClickHide" round>
+    <view class="addressBox">
+        <block wx:for="{{addressInfo.pois}}" bindtap="clickAddress">
+            <view class="address" bindtap="setAddress" data-address="{{item.address}}">{{item.address}}</view>
+        </block>
+    </view>
+</van-popup>
